@@ -1,0 +1,27 @@
+.tag {
+    color: $color-text-white;
+    font-family: Monteserat;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5;
+    padding-right: .6rem;
+    padding-left: .8rem;
+
+    &--primary {
+        background-color: $color-primary;
+    }
+
+    &--teal {
+        background-color: $color-doc-teal;
+    }
+
+    &--blue {
+        background-color: $color-doc-blue;
+    }
+
+    &--orange {
+        background-color: #fe5c07
+    }
+
+}

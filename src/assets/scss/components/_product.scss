@@ -1,0 +1,44 @@
+.product {
+    background-color: $color-tertiary;
+    display: flex;
+    flex-direction: column;
+    min-width: 15rem;
+
+    align-items: center;
+    box-shadow: 0 .2rem .5rem rgba($color-secondary, .2);
+    font-family: "Montserrat";
+    font-size: 1.6rem;
+    font-weight: bold;
+    transition: all .3s;
+    padding: 0 4rem;
+    margin: 1rem 1.5rem;
+
+
+    &:hover {
+        box-shadow: 0 .5rem 1rem rgba($color-secondary, .4);
+        transform: translateY(-1rem);
+    }
+
+    &__image {
+        padding-top: 3rem;
+
+        &--img {
+            border-radius: .2rem;
+        }
+
+    }
+
+    &__name {}
+
+    &__price {
+        padding-bottom: 3.3rem;
+
+        &--original {
+            text-decoration-line: line-through;
+        }
+
+        &--discount {
+            color: $color-primary
+        }
+    }
+}

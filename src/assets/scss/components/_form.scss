@@ -1,0 +1,113 @@
+   .form-input {
+       outline: none;
+       border: none;
+
+       &:focus {
+           outline: none;
+           border: none;
+       }
+
+       &--search {
+           border-radius: 1.8rem;
+           background-color: rgba($color-tertiary, 0.5);
+           height: 3.6rem;
+           border: none;
+           color: $color-text-white;
+           padding-left: 4.5rem;
+           padding-right: 7.3rem;
+
+
+
+           &::placeholder {
+               color: $color-text-white;
+               font-family: "OpenSans";
+               font-size: 1.6rem;
+               font-weight: bold;
+               line-height: 1.71;
+           }
+
+       }
+
+       &--small {
+           border-radius: 2rem;
+           height: 4rem;
+           width: 4rem;
+           padding-left: 2rem;
+           background-color: darken(#fafafa, 2);
+       }
+
+
+
+
+
+
+   }
+
+   .form-checkbox {
+       margin-bottom: 1rem;
+       font-family: inherit;
+
+       input[type=checkbox] {
+           // display: none;
+           position: absolute;
+           opacity: 0;
+
+           &:hover+label:before {
+               background: $color-doc-blue;
+           }
+
+           &+label {
+               position: relative;
+               cursor: pointer;
+               padding: 0;
+               font-size: 1.2rem;
+               font-weight: 300;
+               line-height: 1.5;
+               color: #2e2e2e;
+
+               &:before {
+                   content: '';
+                   margin-right: 1rem;
+                   outline: none;
+                   display: inline-block;
+                   vertical-align: text-bottom;
+                   border: .1rem solid $color-secondary;
+                   width: 1.5rem;
+                   height: 1.5rem;
+                   background: darken($color-text-white, 4);
+                   border-radius: .5rem;
+               }
+
+           }
+
+           &:checked+label:before {
+               background: $color-doc-blue;
+
+           }
+
+           &:checked+label:after {
+               content: '';
+               position: absolute;
+               left: .3rem;
+               top: .4rem;
+               background: $color-tertiary;
+               width: .2rem;
+               height: .2rem;
+               box-shadow:
+                   .2rem 0 0 $color-tertiary,
+                   .4rem 0 0 $color-tertiary,
+                   .4rem -.2rem 0 $color-tertiary,
+                   .4rem -.4rem 0 $color-tertiary,
+                   .4rem -.6rem 0 $color-tertiary,
+                   .4rem -.8rem 0 $color-tertiary;
+               transform: rotate(45deg);
+           }
+
+
+       }
+
+       &--blue {
+           color: $color-text-white;
+           background-color: $color-doc-blue;
+       }
+   }

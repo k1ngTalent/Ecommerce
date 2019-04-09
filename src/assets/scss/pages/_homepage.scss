@@ -1,0 +1,80 @@
+.section-banner {
+    &__image {
+        background-color: inherit;
+        width: 100%;
+        padding-top: 2.7rem;
+        background-size: cover;
+    }
+}
+
+.section-advert {
+    margin-top: 2.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 0 .1rem 1rem 0 rgba($color-secondary, .2);
+    background-color: #ffffff;
+
+    &__tag {
+        display: inline-block;
+        padding-top: 1.4rem;
+        padding-left: 2.4rem;
+    }
+
+    &__image {
+        align-self: flex-start;
+        // align-self: center;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 4.9rem 6.8rem 7.1rem 20rem;
+
+        &>h2 {
+            margin-bottom: 1.9rem;
+        }
+
+        &>p {
+            flex-wrap: wrap;
+            font-family: OpenSans;
+            font-size: 1.6rem;
+            // width: 47.2rem;
+            font-weight: 200;
+            line-height: 1.5;
+            letter-spacing: normal;
+            color: #2e2e2e;
+            margin-bottom: 1.7rem;
+        }
+    }
+
+
+
+
+}
+
+.section-products {
+    margin-top: 4rem;
+
+    &__catalog {
+        display: flex;
+
+
+        &--sidebar {
+            display: flex;
+            padding-right: 5rem;
+
+        }
+
+        &--catalog {
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 4rem;
+
+        }
+
+    }
+}

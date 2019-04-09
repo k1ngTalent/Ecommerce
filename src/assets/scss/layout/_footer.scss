@@ -1,0 +1,52 @@
+.section-footer {
+    background-color: $color-secondary;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    align-items: center;
+    font-family: inherit;
+    color: $color-text-white;
+
+    &__menu {
+        padding: 4rem 0 2rem 0;
+
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            // flex-wrap: wrap;
+
+
+            li {
+                cursor: pointer;
+                list-style: none;
+                padding: 0 1.5rem;
+                font-size: 1.8rem;
+                line-height: 1.5;
+                font-weight: bold;
+
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+
+        }
+
+    }
+
+    &__social {
+        font-size: 2.4rem;
+        display: flex;
+        padding-bottom: 2rem;
+
+        &--item {
+            padding: 0 1rem;
+        }
+    }
+
+    &__company-info {
+        color: $color-text-dark-grey;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}

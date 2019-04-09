@@ -1,0 +1,87 @@
+.section-topbar {
+    background-color: $color-tertiary;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    // flex-wrap: wrap;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2.4;
+    color: #2e2e2e;
+
+
+    &__greeting {
+        text-transform: capitalize;
+        color: $color-text-dark;
+
+    }
+
+    &__or {
+        color: $color-text-dark;
+    }
+
+    &__auth {
+        color: $color-primary;
+        font-family: Montserrat;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 2.4;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+
+
+        // &--login {
+        //     &:hover {
+        //         cursor: pointer;
+        //     }
+
+        // }
+
+        // &--reg {
+        //     &:hover {
+        //         cursor: pointer;
+        //     }
+
+        // }
+    }
+
+    ul {
+        display: flex;
+        // padding: 0 2rem;
+        justify-content: space-between;
+
+
+
+
+        li {
+
+            list-style: none;
+            padding: 0 1.5rem;
+
+            &>a {
+                text-decoration: none;
+                color: inherit;
+
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+
+    &__nationale {
+        display: flex;
+        margin-right: 2rem;
+
+    }
+
+    &__section {
+        display: flex;
+    }
+}

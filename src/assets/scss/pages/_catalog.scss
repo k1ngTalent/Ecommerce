@@ -1,0 +1,17 @@
+.section-catalog {
+    margin-top: 8rem;
+    display: flex;
+
+    &__product {
+        display: flex;
+        // flex: 2;
+        flex-wrap: wrap;
+    }
+
+    &__filter {
+        display: flex;
+        // flex: 1;
+        justify-content: center;
+
+    }
+}
