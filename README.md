@@ -1,4 +1,4 @@
-THIS PROJECT IS ONGOING.
+### THIS PROJECT IS ONGOING.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
